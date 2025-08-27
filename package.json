@@ -1,0 +1,24 @@
+{
+  "name": "shami_cloninggate_part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dieuaime-shami/Shami_CloningGate_part1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dieuaime-shami/Shami_CloningGate_part1/issues"
+  },
+  "homepage": "https://github.com/dieuaime-shami/Shami_CloningGate_part1#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
