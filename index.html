@@ -12,7 +12,7 @@
   <link href="./src/output.css" rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
-<div class="w-full  bg-[url('../public/image/fontImage.webp')] bg-cover bg-[center_top_14%]">
+<div class="w-full pb-2  bg-[url('../public/image/fontImage.webp')] bg-cover bg-[center_top_14%]">
  <div class="flex items-center justify-between mx-15 pt-5">
   <div>
     <img src="./public/image/logg.png" class="bg-">
@@ -73,8 +73,7 @@
   </div>
 </div>
 
-
-<div class="text-white lg:mx-17 mx-5 mt-30 space-y-10">
+<div class="text-white lg:mx-17 mx-5 mt-30">
   <p class="text-xl md:text-4xl font-bold border-2 border-white lg:w-160 w-full px-3 py-4"> YOUR NEXT CHAPTER STARTS NOW</p>
   <p class="lg:w-140 max-lg:w-full border-2 border-white text-xl py-5 px-5">Welcome to Liverpool! if you're joining us in September
     we can't wait to meet you.Find out what you ca do now to get ready.
@@ -92,30 +91,32 @@
 
 <!-- blue section -->
 
-<div class="w-full px-2 bg-blue-900">
-  <div class="text-white block lg:flex justify-between md:w-280 lg:mx-auto items-center pt-7">
-    <p class="text-xl font-bold">Find your course</p>
-    <input type="text" class="py-4 bg-white  outline-0">
-    <button class="border-2 border-white px-8 text-lg h-15">Search</button>
-    <div class="text-lg underline hidden lg:block">
-      <p>Courses by A-Z</p>
-      <p>Courses by Subject</p>
+<div class="w-full">
+  <div class="text-white block justify-between items-center pt-7 lg:px-30 bg-blue-900">
+    <div class="lg:flex">
+      <p class="text-xl font-bold">Find your course</p>
+      <input type="text" class="py-4 bg-white w-1/2 mx-auto  outline-0">
+      <button class="border-2 border-white px-8 text-lg h-15 mx-auto">Search</button>
+      <div class="text-lg mx-auto underline hidden lg:block">
+        <p>Courses by A-Z</p>
+        <p>Courses by Subject</p>
+      </div>
     </div>
-  </div>
-  <div class="grid lg:grid-cols-3 justify-between py-6 lg:px-10">
-    <div class="text-white flex gap-x-3 items-center">
-      <button class="border-5 border-white rounded-full h-6 w-6"></button>
-      <p class="text-lg">Undergraduate</p>
-    </div>
-
-        <div class="text-white flex gap-x-3 items-center">
-      <button class="bg-white rounded-full h-6 w-6"></button>
-      <p class="text-lg">Postgraduate taught</p>
-    </div>
-
-        <div class="text-white flex gap-x-3 items-center">
-      <button class="bg-white rounded-full h-6 w-6"></button>
-      <p class="text-lg">Postgraduate research</p>
+    <div class="lg:flex gap-5 lg:w-1/2 lg:mx-auto py-6">
+      <div class="text-white flex gap-x-3 items-center">
+        <button class="border-5 border-white rounded-full h-6 w-6"></button>
+        <p class="text-lg">Undergraduate</p>
+      </div>
+  
+          <div class="text-white flex gap-x-3 items-center">
+        <button class="bg-white rounded-full h-6 w-6"></button>
+        <p class="text-lg">Postgraduate taught</p>
+      </div>
+  
+          <div class="text-white flex gap-x-3 items-center">
+        <button class="bg-white rounded-full h-6 w-6"></button>
+        <p class="text-lg">Postgraduate research</p>
+      </div>
     </div>
   </div>
 
@@ -201,7 +202,7 @@
         <p class="text-4xl font-bold py-8">Our rankings and reputation</p>
          <div class="grid md:grid-cols-2 gap-x-5">
         <div class="bg-white lg:flex py-30  gap-x-15 px-10">
-          <div class="lg:w-[50%] sm:w-1/2 mx-auto"><img src="./public/image/imageWorld.png" class="w-90"></div>
+          <div class="lg:w-[50%] sm:w-1/2 mx-auto"><img src="./public/image/imageWorld.png" class="lg:w-90 w-100"></div>
           <div class="lg:w-[50%]">
             <p class="text-xl font-bold text-gray-800 py-5">World Top 150</p>
             <p class="text-lg text-gray-800">QS World University Rankings 2026 places us in the Top 150 global universities. 
@@ -212,32 +213,38 @@
 
         <div class="grid grid-rows-3 gap-5">
           <div class="sm:flex gap-x-5 items-center bg-white py-7 px-7 text-lg text-gray-800">
-            <img src="./public/image/tef.png" class="w-20">
+            <div class="w-1/2 mx-auto">
+              <img src="./public/image/tef.png" class="lg:w-20 w-100">
+            </div>
             <p>Our teaching is rated Gold, the highest level, 
               by the Teaching Excellence Framework.</p>
           </div>
 
           <div class="sm:flex gap-x-5 items-center bg-white py-7 px-7 text-lg text-gray-800">
-            <img src="./public/image/OverallPerfrmance.jpg" class="w-20">
+            <div class="w-1/2 mx-auto">
+              <img src="./public/image/OverallPerfrmance.jpg" class="lg:w-20 w-40 max-sm:w-100">
+            </div>
             <p>We're ranked 19th overall in the United Kingdom in the Complete University 
               Guide's UK League Table.</p>
           </div>
 
           <div class="sm:flex gap-x-5 items-center bg-white py-7 px-7 text-lg text-gray-800">
-            <img src="./public/image/worldUniversity.png" class="w-20">
+            <div class="w-1/2 mx-auto">
+              <img src="./public/image/worldUniversity.png" class="lg:w-20 w-40 max-sm:100">
+            </div>
             <p>We’re ranked in the top 160 universities globally in the Times Higher Education World University rankings.</p>
           </div>
 
         </div>
       </div>
-      <button class="border px-2 py-3 text-lg my-8">Explore our rankings and repulation</button>
+      <button class="border mx-2 px-2 py-3 text-lg my-8">Explore our rankings and repulation</button>
       </div>
      </div>
 
           <!-- Discover Liverpool in India -->
 
-     <div class="mx-15 my-15  bg-blue-950 text-white flex h-[50vh] items-center">
-      <div class="mx-10 py-10 space-y-4 flex-2">
+     <div class="lg:mx-15 mx-2 my-15  bg-blue-950 text-white md:flex items-center">
+      <div class="lg:mx-10 mx-2 py-10 space-y-4 flex-2">
         <p class="text-3xl font-bold">Discover Liverpool in India</p>
         <p class="text-lg">Introducing our new campus in the city of Bengaluru, the centre of high-tech industry in India. 
           Find out more about our new campus, which will strengthen existing partnerships, build new connections and bring
@@ -251,7 +258,7 @@
      </div>
 
       <!-- Our research: Transforming lives, changing the world -->
-       <div class="mx-15">
+       <div class="lg:mx-15">
         <div class="w-full">
       <p class="text-3xl font-bold text-blue-950 py-5">Our research: Transforming lives, changing the world</p>
       <p class="text-xl text-gray-700">Discover how our research is making a difference all over the world. As a founding member of the Russell Group, 
@@ -259,8 +266,8 @@
         society and the world around us.</p>
      </div>
 
-     <div class="w-full mt-7 grid grid-cols-3 gap-x-4">
-      <div class="border-t px-15 text-[18px] text-gray-700 py-5">
+     <div class="w-full mt-7 grid lg:grid-cols-3 gap-x-4">
+      <div class="border-t lg:px-15 text-[18px] text-gray-700 py-5">
         <div class="flex items-center hover:cursor-pointer justify-between ">
            <p class="text-2xl font-bold mb-5 text-blue-950 border-b-2 hover:border-b-4 w-60">Research frontiers</p>
              <svg width="30" height="30" fill="#121212" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -273,7 +280,7 @@
         </p>
         </div>
 
-        <div class="border-t px-15 text-[18px] text-gray-700 py-5">
+        <div class="border-t lg:px-15 text-[18px] text-gray-700 py-5">
         <div class="flex items-center hover:cursor-pointer justify-between ">
            <p class="text-2xl font-bold mb-5 text-blue-950 border-b-2 hover:border-b-4 w-80">Interdesciplinary Centrer for Sustainability Research</p>
              <svg width="30" height="30" fill="#121212" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +293,7 @@
         </p>
         </div>
         
-        <div class="border-t px-15 text-[18px] text-gray-700 py-5">
+        <div class="border-t lg:px-15 text-[18px] text-gray-700 py-5">
         <div class="flex items-center hover:cursor-pointer justify-between ">
            <p class="text-2xl font-bold mb-5 text-blue-950 border-b-2 hover:border-b-4 w-40">Our Impact</p>
              <svg width="30" height="30" fill="#121212" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -303,18 +310,18 @@
 
       <!-- Discover a vibrant student life in Liverpool -->
 
-     <div class="flex bg-gray-100 items-center gap-15 my-15">
+     <div class="lg:flex p-2 bg-gray-100 items-center gap-15 my-15">
         <div class="flex-1">
           <img src="./public/image/studentLife.webp" alt="">
         </div>
-        <div class="flex-2 ">
+        <div class="flex-2 p-2">
           <p class="text-3xl font-bold text-gray-700 py-3">We're making an impact across the globe</p>
           <p class="text-lg text-gray-700">
             Enjoy a fantastic student experience when you study with us. Explore the Guild 
             of Students, <br>learn more about what’s happening in our amazing home <br> city and discover 
             your accommodation options.
           </p>
-          <div class="flex gap-3 my-8">
+          <div class="md:flex gap-3 my-8 space-y-5">
             <button class="border py-2 px-2 text-lg">Student life at liverpool</button>
           <button class="border py-2 px-2 text-lg">Why choose Liverpool?</button>
           <button class="border py-2 px-2 text-lg">Find your accommodation</button>
@@ -325,29 +332,31 @@
 
                  <!-- Discover Liverpool in India -->
 
-     <div class="mx-15 my-15  bg-blue-950 text-white flex h-[50vh] items-center">
-      <div class="mx-10 py-10 space-y-4 flex-2">
+     <div class="lg:mx-15 mt-15  bg-blue-950 text-white pb-2 lg:flex items-center">
+      <div class="lg:mx-10 mx-2 space-y-4 md:grid grid-cols-1 w-[50%]">
         <p class="text-3xl font-bold">We're making an impact across the globe</p>
         <p class="text-lg">We’re proud to be part of a global community, where collaboration drives our 
           success and impact across the world. Find out more about our commitment to global engagement and how 
           we’re making a difference to the world.</p>
-          <button class="border py-3 px-4 text-lg hover:cursor-pointer hover:underline">Explore our global partnerships</button>
-          <button class="border py-3 px-4 text-lg hover:cursor-pointer hover:underline">work with us</button>
+          <div>
+            <button class="border py-3 px-4 text-lg hover:cursor-pointer hover:underline">Explore our global partnerships</button>
+            <button class="border py-3 px-4 text-lg hover:cursor-pointer hover:underline">work with us</button>
+          </div>
       </div>
-    
-      <div class="flex-1 h-full">
-        <img src="./public/image/impactGlobe.webp" alt="" class="h-full">
+
+      <div class="h-full">
+        <img src="./public/image/impactGlobe.webp" alt="" class="h-100">
       </div>
      </div>
 
      <!-- Latest news -->
      <div class="w-full bg-gray-100 my-10 py-5">
-      <div class="mx-15 ">
+      <div class="lg:mx-15 ">
         <p class="text-4xl font-bold py-8">Latest news</p>
-         <div class="grid grid-cols-2 gap-x-5">
-        <div class="bg-white flex py-30  gap-x-8 px-10">
-          <div class="h-[35vh]"><img src="./public/image/newsImage.webp" class="h-full"></div>
-          <div class="w-150">
+         <div class="grid md:grid-cols-2 gap-x-5">
+        <div class="bg-white md:flex py-30  gap-x-8 px-10">
+          <div class=""><img src="./public/image/newsImage.webp" class="h-full"></div>
+          <div class="lg:w-150">
             <p class="text-xl font-bold text-gray-800 py-5 underline hover:underline-offset-2">Exceptional Liverpool scientists honoured with Royal Society awards</p>
             <p class="text-lg text-gray-800">Professors Matt Rosseinsky OBE FRS and Andy Cooper FRS,from the Department of Chemistry and the Materials Innovation 
               Factory,have both been honoured with prestigious awards from the Royal Society.</p>
@@ -380,12 +389,12 @@
      <!-- latest events -->
 
       <div class="w-full bg-gray-200 my-10 py-2">
-      <div class="mx-15 ">
+      <div class="lg:mx-15 ">
         <p class="text-4xl font-bold py-8">Latest news</p>
-         <div class="grid grid-cols-2 gap-x-5">
-        <div class="bg-white flex py-10  gap-x-8 px-10">
-          <div class="h-[50vh]"><img src="./public/image/science.webp" class="h-full"></div>
-          <div class="w-150 hover:cursor-pointer">
+         <div class="grid md:grid-cols-2 gap-x-5">
+        <div class="bg-white md:flex py-10  gap-x-8 px-10">
+          <div class=""><img src="./public/image/science.webp" class="h-full"></div>
+          <div class="lg:w-150 hover:cursor-pointer">
             <button class="py-2 px-2 bg-gray-200">LECTURE</button>
             <p class="py-5">09 SEPTEMBER 2025</p>
             <p class="text-xl font-bold text-gray-700 py-5 underline hover:underline-offset-2">Science & Society: Weighing Molecules to Diagnose Disease,from Heel Prick to Skin Swab</p>
@@ -414,14 +423,14 @@
      </div>
             <!-- footer -->
      <div class="bg-gray-800 w-full">
-      <div class="py-10 mx-5 grid grid-cols-3 gap-x-15">
+      <div class="py-10 lg:mx-5 grid lg:grid-cols-3 gap-x-15 space-y-10 p-2">
         <div>
-          <p class="py-2 px-2 border-2 border-white w-60 font-bold text-3xl text-white">THE ORIGINAL</p>
-        <p class="py-2 px-2 border-2 border-white w-60 font-bold text-3xl text-white mx-25">REDBRICK</p>
+          <p class="py-2 px-2 border-2 border-white lg:w-60 w-40 font-bold lg:text-3xl text-xl text-white">THE ORIGINAL</p>
+        <p class="py-2 px-2 border-2 border-white lg:w-60 font-bold lg:text-3xl text-xl text-white mx-25">REDBRICK</p>
         </div>
 
-        <div class="grid grid-cols-3 gap-x-10">
-          <div class="text-white">
+        <div class="grid md:grid-cols-3 gap-10 space-y-10 mx-auto">
+          <div class="text-white mx-auto">
             <p class="text-xl font-bold">Information for</p>
             <ul class="underline space-y-2">
               <li class="cursor-pointer">Current students</li>
@@ -433,7 +442,7 @@
             </ul>
           </div>
 
-          <div class="text-white">
+          <div class="text-white mx-auto">
             <p class="text-xl font-bold">Study at Liverpool</p>
             <ul class="underline space-y-2">
               <li class="cursor-pointer">Undergraduate</li>
@@ -446,7 +455,7 @@
             </ul>
           </div>
 
-          <div class="text-white">
+          <div class="text-white mx-auto">
             <p class="text-xl font-bold">Quick links</p>
             <ul class="underline space-y-2">
               <li class="cursor-pointer">Jobs at Liverpool</li>
@@ -461,7 +470,7 @@
           </div>
         </div>
 
-        <div class="text-white">
+        <div class="text-white mx-auto">
             <p class="text-xl font-bold">Contact us</p>
             <ul class="underline space-y-2">
               <li class="cursor-pointer">University of Liverpool</li>
@@ -478,10 +487,10 @@
       </div>
       <hr class="border border-gray-400">
 
-      <div class="mx-10 my-7">
-        <div class="flex w-full justify-between m">
+      <div class="lg:mx-10 my-7">
+        <div class="md:flex w-full justify-between m">
           <img src="./public/image/rose.png" alt="">
-          <div class="text-2xl text-white">
+          <div class="text-2xl text-white px-2">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
@@ -494,7 +503,7 @@
       <hr class="border border-gray-400">
 
       <div class="w-full text-lg text-white">
-       <ul class=" grid grid-cols-7 justify-around">
+       <ul class="lg:flex justify-around space-y-3 px-2">
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Accessibility</li>
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Freedom of Information</li>
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Cookie Information</li>
@@ -503,7 +512,7 @@
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Terms and conditions</li>
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Charitable status</li>
       </ul>
-      <p class="mx-10">&copy; University of Liverpool</p>
+      <p class="lg:mx-10 mx-2">&copy; University of Liverpool</p>
      </div>
      </div>
 </div>
