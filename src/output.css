@@ -249,8 +249,14 @@
   .h-\[25vh\] {
     height: 25vh;
   }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
   .h-\[85vh\] {
     height: 85vh;
+  }
+  .h-full {
+    height: 100%;
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -270,15 +276,6 @@
   .w-90 {
     width: calc(var(--spacing) * 90);
   }
-  .w-95 {
-    width: calc(var(--spacing) * 95);
-  }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-  .w-120 {
-    width: calc(var(--spacing) * 120);
-  }
   .w-140 {
     width: calc(var(--spacing) * 140);
   }
@@ -294,14 +291,17 @@
   .w-full {
     width: 100%;
   }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-2 {
+    flex: 2;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -318,20 +318,11 @@
   .justify-between {
     justify-content: space-between;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
-  }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -367,9 +358,6 @@
   }
   .gap-x-15 {
     column-gap: calc(var(--spacing) * 15);
-  }
-  .gap-y-2 {
-    row-gap: calc(var(--spacing) * 2);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -434,6 +422,9 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -455,17 +446,8 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
-  }
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
-  }
-  .py-50 {
-    padding-block: calc(var(--spacing) * 50);
-  }
-  .py-300 {
-    padding-block: calc(var(--spacing) * 300);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
@@ -499,9 +481,6 @@
   }
   .text-gray-800 {
     color: var(--color-gray-800);
-  }
-  .text-gray-900 {
-    color: var(--color-gray-900);
   }
   .text-white {
     color: var(--color-white);
