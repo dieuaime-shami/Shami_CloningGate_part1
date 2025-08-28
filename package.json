@@ -19,6 +19,7 @@
   "homepage": "https://github.com/dieuaime-shami/Shami_CloningGate_part1#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
+    "lottie-web": "^5.13.0",
     "tailwindcss": "^4.1.12"
   }
 }
