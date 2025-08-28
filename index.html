@@ -11,13 +11,13 @@
 />
   <link href="./src/output.css" rel="stylesheet">
 </head>
-<body>
-<div class="w-full h-[85vh] bg-[url('../public/image/fontImage.webp')] bg-cover bg-[center_top_14%]">
+<body class="overflow-x-hidden">
+<div class="w-full  bg-[url('../public/image/fontImage.webp')] bg-cover bg-[center_top_14%]">
  <div class="flex items-center justify-between mx-15 pt-5">
   <div>
     <img src="./public/image/logg.png" class="bg-">
   </div>
-  <div class="text-white flex gap-5">
+  <div class="text-white lg:flex hidden gap-5">
     <div>News</div>
     <div>Jobs</div>
     <div>Donate</div>
@@ -28,52 +28,55 @@
   </div>
  </div>
 
- <div class="flex justify-between items-center mx-17 mt-4">
-  <div class="text-white flex gap-x-6">
-    <div class="flex gap-x-2">
+<div class="lg:flex hidden justify-between items-center max-w-[1200px] mx-auto px-4 mt-4 flex-wrap">
+  <div class="text-white flex flex-wrap gap-x-6 gap-y-3">
+    
+    <div class="flex items-center gap-x-2">
       <div class="font-bold text-lg">Study</div>
-      <svg width="30" height="30" fill="#fcfcfc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
+      <svg class="w-6 h-6" fill="#fcfcfc" viewBox="0 0 24 24">
+        <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
       </svg>
     </div>
 
-    <div class="flex gap-x-2">
+    <div class="flex items-center gap-x-2">
       <div class="font-bold text-lg">Student life</div>
-      <svg width="30" height="30" fill="#fcfcfc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
+      <svg class="w-6 h-6" fill="#fcfcfc" viewBox="0 0 24 24">
+        <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
       </svg>
     </div>
 
-    <div class="flex gap-x-2">
+    <div class="flex items-center gap-x-2">
       <div class="font-bold text-lg">Research and innovation</div>
-      <svg width="30" height="30" fill="#fcfcfc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
+      <svg class="w-6 h-6" fill="#fcfcfc" viewBox="0 0 24 24">
+        <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
       </svg>
     </div>
 
-    <div class="flex gap-x-2">
+    <div class="flex items-center gap-x-2">
       <div class="font-bold text-lg">Global</div>
-      <svg width="30" height="30" fill="#fcfcfc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
+      <svg class="w-6 h-6" fill="#fcfcfc" viewBox="0 0 24 24">
+        <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
       </svg>
     </div>
 
-    <div class="flex gap-x-2">
+    <div class="flex items-center gap-x-2">
       <div class="font-bold text-lg">About us</div>
-      <svg width="30" height="30" fill="#fcfcfc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
+      <svg class="w-6 h-6" fill="#fcfcfc" viewBox="0 0 24 24">
+        <path d="M12 16.001a1 1 0 0 1-.64-.23l-6-5a1.001 1.001 0 0 1 1.28-1.54l5.36 4.48 5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83a1 1 0 0 1-.63.17Z"></path>
       </svg>
     </div>
   </div>
-   <div class="text-white flex items-center gap-x-5">
-  <i class="fa-solid fa-magnifying-glass text-xl"></i>
-  <p class="text-lg">Search the site</p>
- </div>
- </div>
 
-<div class="text-white mx-17 mt-30">
-  <p class="text-4xl font-bold border-2 border-white w-160 px-3 py-4"> YOUR NEXT CHAPTER STARTS NOW</p>
-  <p class="w-140 border-2 border-white text-xl py-5 px-5">Welcome to Liverpool! if you're joining us in September
+  <div class="text-white flex items-center gap-x-3 mt-3 md:mt-0">
+    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+    <p class="text-base md:text-lg">Search the site</p>
+  </div>
+</div>
+
+
+<div class="text-white lg:mx-17 mx-5 mt-30 space-y-10">
+  <p class="text-xl md:text-4xl font-bold border-2 border-white lg:w-160 w-full px-3 py-4"> YOUR NEXT CHAPTER STARTS NOW</p>
+  <p class="lg:w-140 max-lg:w-full border-2 border-white text-xl py-5 px-5">Welcome to Liverpool! if you're joining us in September
     we can't wait to meet you.Find out what you ca do now to get ready.
   </p>
 
@@ -89,17 +92,17 @@
 
 <!-- blue section -->
 
-<div class="w-full h-[22vh] bg-blue-900">
-  <div class="text-white flex justify-between w-280 mx-auto items-center pt-7">
+<div class="w-full bg-blue-900">
+  <div class="text-white block md:flex justify-between md:w-280 mx-auto items-center pt-7">
     <p class="text-xl font-bold">Find your course</p>
-    <input type="text" class="h-15 bg-white w-150 outline-0">
+    <input type="text" class="py-4 bg-white w-2/3 outline-0">
     <button class="border-2 border-white px-8 text-lg h-15">Search</button>
-    <div class="text-lg underline">
+    <div class="text-lg underline hidden lg:block">
       <p>Courses by A-Z</p>
       <p>Courses by Subject</p>
     </div>
   </div>
-  <div class="flex w-150 justify-between mx-94 py-6">
+  <div class="grid lg:grid-cols-3 justify-between py-6 lg:px-10 px-2">
     <div class="text-white flex gap-x-3 items-center">
       <button class="border-5 border-white rounded-full h-6 w-6"></button>
       <p class="text-lg">Undergraduate</p>
@@ -196,7 +199,7 @@
      <div class="w-full bg-gray-100 my-10 py-10">
       <div class="mx-15 ">
         <p class="text-4xl font-bold py-8">Our rankings and reputation</p>
-         <div class="flex gap-x-5">
+         <div class="grid grid-cols-2 gap-x-5">
         <div class="bg-white flex py-30  gap-x-15 px-10">
           <div><img src="./public/image/imageWorld.png" class="w-90"></div>
           <div class="w-90">
@@ -256,7 +259,7 @@
         society and the world around us.</p>
      </div>
 
-     <div class="w-full mt-7 flex gap-x-4">
+     <div class="w-full mt-7 grid grid-cols-3 gap-x-4">
       <div class="border-t px-15 text-[18px] text-gray-700 py-5">
         <div class="flex items-center hover:cursor-pointer justify-between ">
            <p class="text-2xl font-bold mb-5 text-blue-950 border-b-2 hover:border-b-4 w-60">Research frontiers</p>
@@ -411,13 +414,13 @@
      </div>
             <!-- footer -->
      <div class="bg-gray-800 w-full">
-      <div class="py-10 mx-5 flex gap-x-15">
+      <div class="py-10 mx-5 grid grid-cols-3 gap-x-15">
         <div>
           <p class="py-2 px-2 border-2 border-white w-60 font-bold text-3xl text-white">THE ORIGINAL</p>
         <p class="py-2 px-2 border-2 border-white w-60 font-bold text-3xl text-white mx-25">REDBRICK</p>
         </div>
 
-        <div class="flex gap-x-10">
+        <div class="grid grid-cols-3 gap-x-10">
           <div class="text-white">
             <p class="text-xl font-bold">Information for</p>
             <ul class="underline space-y-2">
@@ -491,7 +494,7 @@
       <hr class="border border-gray-400">
 
       <div class="w-full text-lg text-white">
-       <ul class=" flex justify-around">
+       <ul class=" grid grid-cols-7 justify-around">
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Accessibility</li>
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Freedom of Information</li>
         <li class=" underline decoration-1 hover:underline hover:decoration-2 hover:cursor-pointer">Cookie Information</li>
