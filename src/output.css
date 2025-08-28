@@ -696,6 +696,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -707,6 +711,14 @@
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-1 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -885,6 +897,9 @@
   .decoration-1 {
     text-decoration-thickness: 1px;
   }
+  .opacity-2 {
+    opacity: 2%;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -898,10 +913,41 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .group-hover\:underline {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
   .hover\:cursor-pointer {
     &:hover {
       @media (hover: hover) {
         cursor: pointer;
+      }
+    }
+  }
+  .hover\:border-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 2px;
+      }
+    }
+  }
+  .hover\:border-b {
+    &:hover {
+      @media (hover: hover) {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 1px;
+      }
+    }
+  }
+  .hover\:border-b-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 2px;
       }
     }
   }
@@ -1268,6 +1314,68 @@
   .\[\&\>\*\]\:mx-auto {
     &>* {
       margin-inline: auto;
+    }
+  }
+  .\[\&\>\*\]\:cursor-pointer {
+    &>* {
+      cursor: pointer;
+    }
+  }
+  .\[\&\>\*\]\:opacity-0 {
+    &>* {
+      opacity: 0%;
+    }
+  }
+  .\[\&\>\*\]\:opacity-2 {
+    &>* {
+      opacity: 2%;
+    }
+  }
+  .\[\&\>\*\]\:opacity-40 {
+    &>* {
+      opacity: 40%;
+    }
+  }
+  .\[\&\>\*\]\:opacity-60 {
+    &>* {
+      opacity: 60%;
+    }
+  }
+  .\[\&\>\*\]\:opacity-90 {
+    &>* {
+      opacity: 90%;
+    }
+  }
+  .\[\&\>\*\]\:opacity-100 {
+    &>* {
+      opacity: 100%;
+    }
+  }
+  .\[\&\>\*\]\:hover\:opacity-100 {
+    &>* {
+      &:hover {
+        @media (hover: hover) {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+  .hover\:\[\&\>\*\]\:opacity-90 {
+    &:hover {
+      @media (hover: hover) {
+        &>* {
+          opacity: 90%;
+        }
+      }
+    }
+  }
+  .hover\:\[\&\>\*\]\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        &>* {
+          opacity: 100%;
+        }
+      }
     }
   }
 }
